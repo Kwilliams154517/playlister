@@ -26,7 +26,6 @@ def playlists_submit():
     playlist_id = playlists.insert_one(playlist).inserted_id
     return redirect(url_for('playlists_show', playlist_id=playlist_id))
 
-
 @app.route('/playlists/new')
 def playlists_new():
     """Create a new playlist."""
